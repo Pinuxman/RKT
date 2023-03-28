@@ -95,7 +95,8 @@ int main() {
 		h = r - R_z;
 		if (h > 118000) {
 			if ( flag_vx){
-				v_x += 329;
+				v_x += 329*cos(fi);
+				v_y += 329*sin(fi);
 				flag_vx = false;
 			}
 		}
@@ -153,7 +154,8 @@ int main() {
 		h = r - R_z;
 		if (h > 118000) {
 			if (flag_vx) {
-				v_x += 329;
+				v_x += 329*cos(fi);
+				v_y += 329*sin(fi);
 				flag_vx = false;
 			}
 		}
